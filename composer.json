@@ -1,0 +1,17 @@
+{
+  "name": "core/translate",
+  "description": "DB extension for Laravel Translate",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kuba Havle",
+      "email": "kuba@havle.cz"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Core\\Translate\\": "src/"
+    }
+  }
+}
