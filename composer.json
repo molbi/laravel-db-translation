@@ -1,5 +1,5 @@
 {
-  "name": "core/translate",
+  "name": "molbi/laravel-db-translation",
   "description": "DB extension for Laravel Translate",
   "license": "MIT",
   "authors": [

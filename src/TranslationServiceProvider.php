@@ -35,7 +35,7 @@ class TranslationServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/config.php', 'translation');
+        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'translation');
 
         $this->registerLoader();
         $this->registerTranslator();
@@ -118,7 +118,7 @@ class TranslationServiceProvider extends ServiceProvider
     private function publishConfig()
     {
         $this->publishes([
-            __DIR__ . '/config.php' => config_path('translation.php'),
+            __DIR__ . '/../config/config.php' => config_path('translation.php'),
         ]);
     }
 
@@ -128,7 +128,7 @@ class TranslationServiceProvider extends ServiceProvider
     private function publishMigration()
     {
         $this->publishes([
-            __DIR__ . '/database/migrations/' => database_path('migrations'),
+            __DIR__ . '/../database/migrations/' => database_path('migrations'),
         ], 'migrations');
     }
 
